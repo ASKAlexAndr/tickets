@@ -18,6 +18,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"));
+        scene.getStylesheets().add(App.class.getResource("chart.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
